@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Commander le produit</title>
+        <script>
+            function Validation_infos(){
+                var quantite = document.form_com.Quantite.value;
+                var couleur_choisie="";
+                if (!confirm("quantite : "+quantite+"\nconfirmer votre choix ?")){
+                    return false
+                    }
+                for(var i=0;i<Couleur.length;i++){
+                    if(Couleur[i].checked){
+                        couleur_choisie=couleur_choisie+" "+ Couleur[i].value;
+                    }
+                }
+                if(!confirm("Couleur "+ couleur_choisie + "Confirmez votre choix ?")){
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body  style="background-image: url(../image/a.jpg);">
+        <h6>Medjdoub bahae <br>kouadri Aymen</h6>
+        <h1 align="center" style="color: rgb(3, 120, 229);">Commander le produit</h1>
+        <form action="Commande.php" method="post" name="form_com">
+            <table align="center" style="background-color: #ADD8E6;"> 
+                <tr>
+                    <td rowspan="6"><img src="image/pc1.jpeg" width="400" height="500"></td><td>Vendeur :</td><td><input type="text" value="Bahae" name="Vendeur" readonly></td>
+                </tr>
+                <tr>
+                    <td>Prix : </td><td><input type="text" value=" 370000DA" name="Prix" readonly ></td>
+                </tr>
+                <tr>
+                    <td>Modele : </td><td><input type="text" value="Iphone 14 pro max" name="Modele" readonly></td>
+                </tr>
+                <tr>
+                    <td>Couleur</td><td><input type="checkbox" name="Couleur[]" value="Noir">Noir <br><input type="checkbox" name="Couleur[]" value="Blanc">Blanc</td>
+                </tr>
+                <tr>
+                    <td>Quantite</td><td><select name="Quantite" id="">
+                        <option >1</option>
+                        <option >2</option>
+                        <option >3</option>
+                        <option >4</option>
+                        <option >5</option>
+                        <option >6</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="   Effacer   "></td><td><input type="submit" value="   Envoyer   " onclick="return Validation_infos()"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <title>BIDJAD NUTRITION.com - Home Page</title>
+    <link rel="website icon" type="png" href="pic/bidjad.jpg" />
+    <a href="index.html"> <img class="image" src="pic/bidjad.jpg" /></a>
+    <link rel="stylesheet" href="style.css" />
+    <script src="inscription.js"></script>
+    <style>
+      body {
+        
+        background:url("pic/img.jpg")no-repeat;
+       background-size:cover ;
+       background-position: center;
+        
+      }
+      h1{
+        color: #fff;
+      }
+      td{
+        color: #fff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      input{
+        color: #fff;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(225, 225, 225, .2);
+        border-radius: 40px;
+        margin-top: 5px  ;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="myphp.php" method="post">
+      <table class="inscri">
+        <caption>
+          <h1>SIGN UP</h1>
+        </caption>
+
+        <tr>
+          <td>nom utilisateur:</td>
+          <td>
+            <input type="text"name="Nom" placeholder="ID USER" />
+          </td>
+        </tr>
+        <tr>
+          <td>prenom</td>
+          <td>
+            <input type="text" name="Prenom" placeholder="username" required />
+          </td>
+        </tr>
+        <tr>
+          <td>age</td>
+          <td>
+            <label for="a"></label>
+            <input id="a" type="number" name="Age" placeholder=">18ans" required />
+          </td>
+        </tr>
+        <tr>
+          <td>wilaya</td>
+          <td>
+            <select name="Wilaya">
+              <option value="setif">setif</option>
+              <option value="alger">alger</option>
+              <option value="ouergela">ouergela</option>
+              <option value="oran">oran</option>
+              <option value="djelfa">djelfa</option>
+              <option value="annaba">annaba</option>
+              <option value="canstantine">canstantine</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>N tel</td>
+          <td><input type="tel" name="Telephone" size="10" placeholder="+213" /></td>
+        </tr>
+        <tr>
+          <td>email</td>
+          <td>
+            <input type="email" name="mail" placeholder="@gmail.com" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td>address</td>
+          <td>
+            <input type="text" name="adresse" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td>mot de passe</td>
+          <td>
+            <input type="password" name="Mot de passe1" placeholder="PASSWORD" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>confirmer mot de passe</td>
+          <td>
+            <input type="password" name="confirmer mot de passe" placeholder="PASSWORD" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>SEX</td>
+          <td>
+            <label for="m">homme</label>
+            <input id="m" type="radio" value="homme" name="SEX" required name="s" />
+            <label for="f">femme</label>
+            <input id="f" type="radio" value="femme" name="SEX" required name="s" />
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <button type="submit">envoyer</button>
+            <button type="reset">effacer</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

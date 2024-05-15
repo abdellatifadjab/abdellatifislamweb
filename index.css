@@ -1,0 +1,19 @@
+            .arrticle
+            {
+                width: 150px;
+                height: 150px;
+            }
+            .prixArticle
+            {
+                background-color: bisque;
+                font-size: 20px;
+            }
+            .arrticle:hover
+            {
+                width: 155px;
+                height: 155px;
+            }
+            .prixArticle:active
+            {
+                font-size: 30px;
+            }

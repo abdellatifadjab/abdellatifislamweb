@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>inscription</title>
+        <meta charset="utf-8">
+        <script src="java script/inscreption.js">
+        </script>
+    </head>
+    <body style="background-image: url(image/a.jpg);">
+        <h6>Medjdoub bahae <br>kouadri Aymen</h6>
+
+        <h1 align="center" style="color: rgb(3, 120, 229);">Créer un compte</h1>
+        <form name="form_inscreption" action="inscription.php" method="post">
+            <table border="0" cellspacing="0" align="center" style="background-color: #ADD8E6;"> 
+                <tr>
+                    <td>Nom :</td>
+                    <td><input type="text" name="Nom" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Prenom :</td>
+                    <td><input type="text"name="Prenom" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Age :</td><td><input type="number" name="Age"></td>
+                </tr>
+                <tr>
+                    <td>Wilaya :</td>
+                    <td>
+                        <select name="Wilaya" >
+                            <option > 1 : Adrar</option>
+                            <option > 2 : Chlef</option>
+                            <option > 3 : Laghouat</option>
+                            <option > 4 : Oum El mouaghi</option>
+                            <option > 5 : Batna</option>
+                            <option > 6 : Béjaïa</option>
+                            <option > 7 : Biskra</option>
+                            <option > 8 : Béchar</option>
+                            <option > 9 : Blida</option>
+                            <option >10 : Bouira</option>
+                            <option >11 : Tamanrasset</option>
+                            <option >12 : Tébssa</option>
+                            <option >13 : Tlemcen</option>
+                            <option >14 : tiaret</option>
+                            <option >15 : Tizi Ouzou</option>
+                            <option >16 : Alger</option>
+                            <option >17 : Djelfa</option>
+                            <option >18 : Jijel</option>
+                            <option >19 : Sétif</option>
+                            <option >20 : Saïda</option>
+                            <option >21 : Skikda</option>
+                            <option >22 : Sidi Bel Abbès</option>
+                            <option >23 : Annaba</option>
+                            <option >24 : Guelma</option>
+                            <option >25 : Constantine</option>
+                            <option >26 : Médéa</option>
+                            <option >27 : Mostaganem</option>
+                            <option >28 : M'Sila</option>
+                            <option >29 : Mascara</option>
+                            <option >30 : Ouargla</option>
+                            <option >31 : Oran</option>
+                            <option >32 : Bayadh</option>
+                            <option >33 : Illizi</option>
+                            <option >34 : Bordj Bou Arreridj</option>
+                            <option >35 : Boumerdès</option>
+                            <option >36 : Taref</option>
+                            <option >37 : Tindouf</option>
+                            <option >38 : Tissemssilt</option>
+                            <option >39 : El Oued</option>
+                            <option >40 : Khenchla</option>
+                            <option >41 : Souk Ahras</option>
+                            <option >42 : Tipaza</option>
+                            <option >43 : Mila</option>
+                            <option >44 : Aïn Defla</option>
+                            <option >45 : Naâma</option>
+                            <option >46 : Aïn Témouchent</option>
+                            <option >47 : Ghardaïa</option>
+                            <option >48 : Rekizane</option>
+                            <option >49 : Timimoun</option>
+                            <option >50 : Bordj Badji Mokhtar</option>
+                            <option >51 : Ouled Djellal</option>
+                            <option >52 : Béni Abbès</option>
+                            <option >53 : In Salah</option>
+                            <option >54 : In Guezzam</option>
+                            <option >55 : Touggourt</option>
+                            <option >56 : Djanet</option>
+                            <option >57 : El M'Ghair</option>
+                            <option>58 : El Meniaa</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Téléphone :</td><td><input type="tel" name="Telephone" size="30"></td>
+                </tr>
+                <tr>
+                    <td>E-mail :</td><td><input type="email" name="mail" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Adresse :</td>
+                    <td>
+                        <textarea rows="5" cols="30"name="Adresse"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mot de passe :</td><td><input type="password" name="Mot_de_passe1" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Confirmer le mot de passe :</td>
+                    <td><input type="password" name="Mot_de_passe2" size=""></td>
+                </tr>
+                <tr>
+                    <td>Sexe :</td><td><input type="radio" name="Sexe" value="Homme" >Homme<input type="radio" name="Saxe" value="Famme">Famme</td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="   Effacer   "></td><td><input type="submit" value="   Envoyer   " onclick="return Validation_inscreption()" ></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
